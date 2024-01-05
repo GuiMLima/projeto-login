@@ -45,6 +45,48 @@ section#login > div#formulario {
     padding: 10px;
 }
 
+form > div.campo {
+    background-color: #ff6701;
+    color: white;
+    border-radius: 10px;
+    width: calc(100% - 5px);
+    margin: 5px 0px;
+    padding: 4px;
+    height: 35px;
+}
+
+div.campo > i {
+    color: white;
+    padding: 4px;
+}
+
+div.campo > input {
+    background-color: #fd822f;
+    border: none;
+    width: calc(100% - 40px);
+    padding: 4px;
+    height: 100%;
+    transform: translatey(-10px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type= submit] {
+    display: block;
+    font-size: 1em;
+    width: 98%;
+    height: 40px;
+    background-color: #ff6701;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+form > input[type= submit]:hover {
+    background-color: #9e350c;
+}
 @media screen and (min-width: 768px) and (max-width: 949px) {
     body {
         background-color: #0da48b;
@@ -52,6 +94,7 @@ section#login > div#formulario {
 
     section#login {
         width: 80vw;
+        height: 280px;
     }
 
     section#login > div#imagem {
@@ -61,6 +104,22 @@ section#login > div#formulario {
         float: left;
         width: 30%;
         height: 100%;
+    }
+
+    div.campo > input {
+        background-color: #69f9e1;
+    }
+
+    form > div.campo {
+        background-color: #05FFD5;
+    }
+
+    form > input[type= submit] {
+        background-color: #05FFD5;
+    }
+
+    form > input[type=submit]:hover {
+        background-color: #0da48b;
     }
 
     section#login > div#formulario {
@@ -77,6 +136,7 @@ section#login > div#formulario {
 
     section#login {
         width: 80vw;
+        height: 280px
     }
 
     section#login > div#imagem {
@@ -91,5 +151,21 @@ section#login > div#formulario {
         float: right;
         width: 50%;
         height: 100%;
+    }
+
+    div.campo > input {
+        background-color: #05FF00;
+    }
+
+    form > div.campo {
+        background-color: #05FF00;
+    }
+
+    form > input[type= submit] {
+        background-color: #05FF00;
+    }
+
+    form > input[type=submit]:hover {
+        background-color: #11a50f;
     }
 }
